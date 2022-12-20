@@ -27,6 +27,6 @@ public class ProtocolizeTest {
     @Subscribe
     public void onChat(PlayerChatEvent e) {
         ProtocolizePlayer player = Protocolize.playerProvider().player(e.getPlayer().getUniqueId());
-        player.playSound(Sound.ENTITY_ENDERMAN_TELEPORT, SoundCategory.MASTER, 1f, 1f);
+        player.playSound(Sound.BLOCK_NOTE_BLOCK_FLUTE, SoundCategory.MASTER, 1f, 1f);
     }
 }
